@@ -1,0 +1,18 @@
+import kotlin.Boolean;
+
+CREATE TABLE Hero (
+    id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    description TEXT,
+);
+
+insertHero:
+INSERT INTO Hero(id, name, description)
+VALUES(?, ?, ?);
+
+removeAllHeroes:
+DELETE FROM Hero;
+
+selectAllHeroesInfo:
+SELECT Hero.*
+FROM Hero;
